@@ -12,6 +12,7 @@ target 'Axxess' do
     pod 'SwiftyJSON', '~> 4.0'  
     pod 'Alamofire', '4.9.1'
     pod 'ObjectMapper'
+    pod 'Kingfisher'
 
   target 'AxxessTests' do
     inherit! :search_paths

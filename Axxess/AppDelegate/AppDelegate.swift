@@ -13,8 +13,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?    
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+                
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let mainVC = JSONViewController()
+        window?.rootViewController = mainVC
+        window?.makeKeyAndVisible()
+        
         return true
     }
     
